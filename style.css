@@ -1,0 +1,36 @@
+/* font */
+font-family: "Inter"
+
+font-family: "Noto Serif"
+
+
+/* nav */
+
+.nav-right{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    justify-content: centre;
+    
+    
+    
+
+
+}
+.nav-left{
+    list-style: none;
+    gap: 10pxs;
+}
+
+.nav-cart{
+    list-style: none;
+    gap: 10px;
+    display: flex;
+
+
+}
+
+.cart{
+    width: 24px;
+    height: 24px;
+}
