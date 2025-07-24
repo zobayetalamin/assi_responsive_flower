@@ -143,6 +143,8 @@ main{
 }
 /* plant section */
 .plants-sec{
+    max-width: 1140px;
+    margin: 0 auto;
     padding: 60px 0;
     background-color: white;
     text-align: center;
@@ -223,11 +225,11 @@ main{
     .menu-toggle{
         display: none;
     }
+    /* banner section */
     .banner-img{
     /* width: 300px; */
     height: auto;
-    width: 100%;
-    max-width: 90%;
+    width: 50px ;
     margin-bottom: 15px;
     border-radius: 0;
     box-shadow: none;
@@ -235,13 +237,15 @@ main{
     .banner{
         max-width: 100%;
         flex-direction: column-reverse;
-        padding: 30px 20px;
+        padding: 0;
         margin: 0 auto;
         gap: 20px;
         
     }
     .banner-title{
-        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
         text-align: center;
     }
     .banner-h{
@@ -252,5 +256,35 @@ main{
         text-align: center;
         font-size: 15px;
     }
-
+    /* plant section */
+    .plant-sec{
+        max-width: 50%;
+        padding: 40px 0;
+    }
+    .plant-h{
+        font-size: 30px;
+        padding: 0 15px;
+    }
+    .plant-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 15px;
+    }
+    .plant-card{
+        padding: 15px;
+    }
+    .plant-card-title{
+        font-size: 18px;
+    }
+    .plant-card-price{
+        font-size: 14px;
+    }
+    .plant-card-btn{
+        width: 170px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .plant-lily{
+        width: 170px;
+    }
 }
