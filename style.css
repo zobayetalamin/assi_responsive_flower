@@ -44,7 +44,8 @@ font-variation-settings:
 .nav-bar{
     display: flex;
     gap: auto;
-    max-width: 1140px;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 30px;
     justify-content: center;
     align-content: center;
@@ -106,11 +107,23 @@ font-variation-settings:
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
+.banner-title{
+        flex: 1;
+        min-width: 300px;
+        text-align: left ;
+    }
+
 .banner-h{
     font-weight: bold;
     font-size: 4rem;
     font-family: "noto-serif";
+    margin-bottom: 15px;
 }
 .banner-p{
     font-weight: normal;
@@ -119,12 +132,90 @@ font-variation-settings:
     color: rgba(0, 0, 0, 0.5);
 }
 .banner-img{
-    width: 570px;
-    height: 355px;
+    flex: 1;
+    min-width: 300px;
+    text-align: right;
+}
+/* main */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* plant section */
+.plants-sec{
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
+}
+.plant-title{
+    margin-bottom: 40px;
+}
+.plant-h{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "noto-serif";
+}
+.plant-p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter";
+    font-weight: normal;
+    margin: 0 auto;
+}
+.plant-grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+.plant-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+.plant-card:hover{
+    transform: translateY(-5px);
+}
+
+.plant-card-img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.plant-card-price{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.plant-card-btn{
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+.plant-card-btn:hover {
+    background-color: yellowgreen;
 }
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
+    body{
+        overflow-x: hidden;
+    }
     .nav-left {
         width: 100%;
         justify-content: space-between;
@@ -135,13 +226,23 @@ font-variation-settings:
     .banner-img{
     /* width: 300px; */
     height: auto;
-    max-width: 100%;
+    width: 100%;
+    max-width: 90%;
     margin-bottom: 15px;
+    border-radius: 0;
+    box-shadow: none;
     }
-    .banner, .banner-title{
+    .banner{
+        max-width: 100%;
+        flex-direction: column-reverse;
         padding: 30px 20px;
-        flex-direction: column;
+        margin: 0 auto;
         gap: 20px;
+        
+    }
+    .banner-title{
+        min-width: 100%;
+        text-align: center;
     }
     .banner-h{
         text-align: center;
