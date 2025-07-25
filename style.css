@@ -19,8 +19,6 @@ font-family: "Noto Serif", serif;
 font-optical-sizing: auto;
 font-weight: 400px;
 font-style: normal;
-font-variation-settings:
-    "wdth" 100;
 }
 
 /* shared styles */
@@ -361,7 +359,6 @@ main{
     height: 100%; 
     box-sizing: border-box; 
 }
-
 .offer-card {
     height: 250px;
 }
@@ -394,7 +391,7 @@ font-size: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 900px;
 }
 
 .newsletter-container {
@@ -433,9 +430,9 @@ font-size: 26px;
 .newsletter-input {
     width: 20rem; 
     padding: 0.75rem 1.5rem; 
-    border: 1px solid #ccc;
+    border: 1px solid white;
     background-color: white;
-    color: #333;
+    color: #333333;
     margin-bottom: 1rem; 
 }
 
@@ -448,7 +445,6 @@ font-size: 26px;
     border: none;
     cursor: pointer;
 }
-
 .newsletter-button:hover {
     background-color: yellowgreen;
 }
@@ -468,25 +464,17 @@ footer{
 }
 .image-logo{
     width: 135px;
-
 }
-/* .left-p{
-
-} */
 .home-footer{
     display: grid;
     grid-template-rows: row;
-
 }
 .feature-footer{
     display: grid;
     grid-template-rows: row;
-
 }
 .social-pic{
     justify-items: space-between;
-    
-
 }
 .a-footer{
     text-decoration: none;
@@ -496,9 +484,7 @@ footer{
 .social-foot-pic{
     margin-right: 15px;
 }
-/* #twitter-x{
-    margin-top: -250px;
-} */
+
 
 
 
